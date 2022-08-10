@@ -28,9 +28,11 @@ For a full stack PERN application. This is a mock dating app for individuals who
 
 Once you fork and clone the repo:
 
-    1.   npm i
-    2.   npx sequelize db:create
-    3.   npx sequelize db:migrate
+    1.   Create .env file with correct stuff
+    2.   npm i
+    3.   npx sequelize db:create
+    4.   npx sequelize db:migrate
+    5.   npx sequelize db:seed:all
 
 ### Screenshots
 
