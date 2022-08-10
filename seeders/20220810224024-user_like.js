@@ -1,24 +1,29 @@
-'use strict';
+'use strict'
+
+/// TEMPLATE
+
+// {
+//     userId: ,
+//     liked_userId:,
+//     createdAt: new Date(),
+//     updatedAt: new Date()
+//   }
+
+const users = [
+  {
+    userId: 1,
+    liked_userId: 2,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  }
+]
 
 module.exports = {
-  async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
+  async up(queryInterface, Sequelize) {
+    return queryInterface.bulkInsert('user_likes', users)
   },
 
-  async down (queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+  async down(queryInterface, Sequelize) {
+    return queryInterface.bulkDelete('user_likes')
   }
-};
+}

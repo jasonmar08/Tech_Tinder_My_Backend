@@ -4,8 +4,6 @@
 
 //  {
 //     caption: '',
-//     firstName: '',
-//     lastName: '',
 //     video_url: '',
 //     userId: ,
 //     createdAt: new Date(),
@@ -15,8 +13,6 @@
 const video_posts = [
   {
     caption: 'Fun day in the sun!',
-    firstName: 'Mark',
-    lastName: 'Zuckerberg',
     video_url: 'https://www.youtube.com/embed/Ibm3WhfLk08',
     userId: 1,
     createdAt: new Date(),
@@ -26,10 +22,10 @@ const video_posts = [
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    return queryInterface.bulkInsert('users', video_posts)
+    return queryInterface.bulkInsert('video_posts', video_posts)
   },
 
   async down(queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('users', video_posts)
+    return queryInterface.bulkDelete('video_posts', video_posts)
   }
 }

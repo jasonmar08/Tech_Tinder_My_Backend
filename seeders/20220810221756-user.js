@@ -22,7 +22,7 @@
 
 const users = [
   {
-    email: 'test@test.com',
+    email: 'mark@fb.com',
     firstName: 'Mark',
     lastName: 'Zuckerberg',
     password: 'test',
@@ -35,6 +35,21 @@ const users = [
     fb_link: 'https://www.facebook.com/zuck',
     pfp_link:
       'https://www.usmagazine.com/wp-content/uploads/2020/07/Mark-Zuckerberg-Spooks-the-Internet-With-Too-Much-Sunscreen-on-His-Face-in-Hawaii-01.jpg?w=1600&quality=86&strip=all',
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    email: 'elon@tesla.com',
+    firstName: 'Elon',
+    lastName: 'Musk',
+    password: 'test',
+    city: 'Boca Chica',
+    state: 'TX',
+    age: 51,
+    gender: 'Male',
+    orientation: 'Female',
+    pfp_link:
+      'https://e3.365dm.com/22/05/768x432/skynews-elon-musk_5780923.jpg?20220725073759',
     createdAt: new Date(),
     updatedAt: new Date()
   }
