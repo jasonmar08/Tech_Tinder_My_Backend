@@ -40,7 +40,8 @@ const Register = async (req, res) => {
       ig_link,
       fb_link,
       li_link,
-      pfp_link
+      pfp_link,
+      bio
     } = req.body
     let passwordDigest = await middleware.hashPassword(password)
     // const user = await User.create({ email, passwordDigest, name })
@@ -58,6 +59,7 @@ const Register = async (req, res) => {
       fb_link,
       li_link,
       pfp_link,
+      bio,
       createdAt: new Date(),
       updatedAt: new Date()
     })
