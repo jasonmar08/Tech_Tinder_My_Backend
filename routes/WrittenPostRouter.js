@@ -1,30 +1,26 @@
 //need model
 const Router = require('express').Router()
-const controller = require('../controllers/UserController.js')
+const controller = require('../controllers/WrittenController.js')
 const middleware = require('../middleware')
 
-Router.get(
-  '/writtenposts',
-  middleware.stripToken,
-  middleware.verifyToken,
-  controller.GetAllWrittenPosts
-)
+Router.get('/all', controller.GetPosts)
 Router.post(
-  '/writtenposts/:user_id',
+  '/post',
   middleware.stripToken,
   middleware.verifyToken,
-  controller.CreateWrittenPost
+  controller.CreatePost
 )
 Router.put(
-  '/writtenposts/:writtenpost_id',
-  middleware.stripToken,
-  middleware.UpdateWrittenPost
-)
-Router.delete(
-  '/writtenposts/:writtenpost_id',
+  '/:writtenpost_id',
   middleware.stripToken,
   middleware.verifyToken,
-  controller.DeleteWrittenPost
+  controller.UpdatePost
+)
+Router.delete(
+  '/:writtenpost_id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.DeletePost
 )
 
 module.exports = Router
