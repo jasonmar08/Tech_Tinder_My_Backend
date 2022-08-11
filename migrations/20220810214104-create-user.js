@@ -17,7 +17,7 @@ module.exports = {
       lastName: {
         type: Sequelize.STRING
       },
-      password: {
+      passwordDigest: {
         type: Sequelize.STRING
       },
       city: {
