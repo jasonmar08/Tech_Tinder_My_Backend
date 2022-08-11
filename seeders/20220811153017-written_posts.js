@@ -12,6 +12,7 @@
 
 const written_posts = [
   {
+    type: 'written',
     title: 'Living my best life!',
     text: 'Just started an apprenticeship at a startup called Tesla. Grateful and excited for this opportunity. Counting my blessings everyday. #Blessed #ElonIsTheGoat',
     userId: 1,
