@@ -50,6 +50,7 @@ module.exports = {
       pfp_link: {
         type: Sequelize.STRING(1500)
       },
+      bio: Sequelize.STRING,
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
