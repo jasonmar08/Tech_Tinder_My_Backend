@@ -1,4 +1,4 @@
-# Tech-Tinder-Front
+# Tech-Tinder-Backend
 
 ## A dating app for losers in tech
 
