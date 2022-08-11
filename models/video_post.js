@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Video_Post.init(
     {
+      type: DataTypes.STRING,
       caption: DataTypes.STRING,
       video_url: DataTypes.STRING,
       userId: {

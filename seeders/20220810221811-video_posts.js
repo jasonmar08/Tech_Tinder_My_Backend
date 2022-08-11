@@ -12,6 +12,7 @@
 
 const video_posts = [
   {
+    type: 'video',
     caption: 'Fun day in the sun!',
     video_url: 'https://www.youtube.com/embed/Ibm3WhfLk08',
     userId: 1,
