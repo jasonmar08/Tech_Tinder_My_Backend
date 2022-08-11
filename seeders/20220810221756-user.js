@@ -16,6 +16,7 @@
 //     fb_link: '',
 //     li_link: '',
 //     pfp_link:'',
+//     bio: '',
 //     createdAt: new Date(),
 //     updatedAt: new Date()
 //   }
@@ -35,6 +36,7 @@ const users = [
     fb_link: 'https://www.facebook.com/zuck',
     pfp_link:
       'https://www.usmagazine.com/wp-content/uploads/2020/07/Mark-Zuckerberg-Spooks-the-Internet-With-Too-Much-Sunscreen-on-His-Face-in-Hawaii-01.jpg?w=1600&quality=86&strip=all',
+    bio: 'Just here to have fun',
     createdAt: new Date(),
     updatedAt: new Date()
   },
@@ -50,6 +52,7 @@ const users = [
     orientation: 'Female',
     pfp_link:
       'https://e3.365dm.com/22/05/768x432/skynews-elon-musk_5780923.jpg?20220725073759',
+    bio: 'Just here to have fun',
     createdAt: new Date(),
     updatedAt: new Date()
   }
