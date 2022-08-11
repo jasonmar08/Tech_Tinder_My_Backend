@@ -41,9 +41,18 @@ module.exports = (sequelize, DataTypes) => {
       firstName: DataTypes.STRING,
       lastName: DataTypes.STRING,
       passwordDigest: DataTypes.STRING,
-      city: DataTypes.STRING,
-      state: DataTypes.STRING,
-      age: DataTypes.INTEGER,
+      city: {
+        type: DataTypes.STRING,
+        allowNull: true
+      },
+      state: {
+        type: DataTypes.STRING,
+        allowNull: true
+      },
+      age: {
+        type: DataTypes.STRING,
+        allowNull: true
+      },
       gender: DataTypes.STRING,
       orientation: DataTypes.STRING,
       ig_link: {
