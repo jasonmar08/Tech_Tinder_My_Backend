@@ -16,7 +16,7 @@ app.use(logger('dev'))
 app.use(express.json())
 
 app.use('/auth', AuthRouter)
-// app.use('/writtenposts', WrittenPostRouter)
+app.use('/writtenposts', WrittenPostRouter)
 app.use('/videoposts', VideoPostRouter)
 app.use('/imageposts', ImagePostRouter)
 app.use('/users', UserRouter)
