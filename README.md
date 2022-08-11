@@ -1,4 +1,4 @@
-# Tech-Tinder-Front
+# Tech-Tinder-Back
 
 ## A dating app for losers in tech
 
@@ -28,11 +28,7 @@ For a full stack PERN application. This is a mock dating app for individuals who
 
 Once you fork and clone the repo:
 
-    1.   Create .env file with correct stuff
-    2.   npm i
-    3.   npx sequelize db:create
-    4.   npx sequelize db:migrate
-    5.   npx sequelize db:seed:all
+    1.   npm i
 
 ### Screenshots
 
