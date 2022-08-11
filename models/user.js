@@ -53,7 +53,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: true
       },
-      pfp_link: DataTypes.STRING
+      pfp_link: DataTypes.STRING(1500)
     },
     {
       sequelize,

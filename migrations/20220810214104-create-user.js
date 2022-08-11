@@ -48,7 +48,7 @@ module.exports = {
         allowNull: true
       },
       pfp_link: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(1500)
       },
       createdAt: {
         allowNull: false,
