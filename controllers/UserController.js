@@ -97,14 +97,28 @@ const getUserLikes = async (req, res) => {
 const LikeUser = async (req, res) => {
   try {
     let u = await User_Like.create({
-      userId: req.params.user_id,
-      liked_userId: req.params.liked_userId
+      userId: req.params.liked_userId,
+      liked_userId: req.params.user_id
     })
     res.send(u)
   } catch (error) {
     throw error
   }
 }
+const DeleteLike = async (req, res) => {
+  try {
+    let u = await User_Like.destroy({
+      where: {
+        userId: req.params.user_id,
+        liked_userId: req.params.liked_userId
+      }
+    })
+    res.send({ message: 'Deleted user with an id of ' })
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
   GetAllUsers,
   GetAllMales,
@@ -115,5 +129,6 @@ module.exports = {
   CreateUser,
   UpdateUser,
   DeleteUser,
-  LikeUser
+  LikeUser,
+  DeleteLike
 }

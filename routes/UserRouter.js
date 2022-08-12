@@ -54,10 +54,16 @@ Router.delete(
 )
 
 Router.post(
-  '/like/:liked_userId/:user_id',
+  '/like/:user_id/:liked_userId',
   middleware.stripToken,
   middleware.verifyToken,
   controller.LikeUser
+)
+Router.delete(
+  '/like/:user_id/:liked_userId',
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.DeleteLike
 )
 
 module.exports = Router
