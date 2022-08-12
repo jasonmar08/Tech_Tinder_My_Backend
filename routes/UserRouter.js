@@ -53,4 +53,11 @@ Router.delete(
   controller.DeleteUser
 )
 
+Router.post(
+  '/like/:liked_userId/:user_id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.LikeUser
+)
+
 module.exports = Router

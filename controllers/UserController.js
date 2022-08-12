@@ -1,4 +1,4 @@
-const { User, Posts } = require('../models')
+const { User, User_Like } = require('../models')
 
 const GetAllUsers = async (req, res) => {
   try {
@@ -94,7 +94,17 @@ const getUserLikes = async (req, res) => {
     console.log(error)
   }
 }
-
+const LikeUser = async (req, res) => {
+  try {
+    let u = await User_Like.create({
+      userId: req.params.user_id,
+      liked_userId: req.params.liked_userId
+    })
+    res.send(u)
+  } catch (error) {
+    throw error
+  }
+}
 module.exports = {
   GetAllUsers,
   GetAllMales,
@@ -104,5 +114,6 @@ module.exports = {
   getUserLikes,
   CreateUser,
   UpdateUser,
-  DeleteUser
+  DeleteUser,
+  LikeUser
 }
