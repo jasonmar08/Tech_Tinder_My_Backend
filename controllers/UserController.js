@@ -109,11 +109,11 @@ const DeleteLike = async (req, res) => {
   try {
     let u = await User_Like.destroy({
       where: {
-        userId: req.params.user_id,
-        liked_userId: req.params.liked_userId
+        userId: req.params.liked_userId,
+        liked_userId: req.params.user_id
       }
     })
-    res.send({ message: 'Deleted user with an id of ' })
+    res.send({ message: `Deleted like` })
   } catch (error) {
     throw error
   }
