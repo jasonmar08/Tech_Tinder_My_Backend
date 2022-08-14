@@ -35,6 +35,34 @@ const Login = async (req, res) => {
     throw error
   }
 }
+const stayLogged = async (req, res) => {
+  try {
+    const user = await User.findOne({
+      where: { email: req.body.email },
+      raw: true
+    })
+    let payload = {
+      id: user.id,
+      email: user.email,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      city: user.city,
+      state: user.state,
+      age: user.age,
+      gender: user.gender,
+      orientation: user.orientation,
+      ig_link: user.ig_link,
+      fb_link: user.fb_link,
+      li_link: user.li_link,
+      pfp_link: user.pfp_link,
+      bio: user.bio
+    }
+    let token = middleware.createToken(payload)
+    return res.send({ user: payload, token })
+  } catch (error) {
+    throw error
+  }
+}
 
 const Register = async (req, res) => {
   try {
@@ -113,5 +141,6 @@ module.exports = {
   Login,
   Register,
   UpdatePassword,
-  CheckSession
+  CheckSession,
+  stayLogged
 }
