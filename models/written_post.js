@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
   Written_Post.init(
     {
       type: DataTypes.STRING,
+      time: DataTypes.INTEGER,
       title: DataTypes.STRING,
       text: DataTypes.STRING,
       userId: {

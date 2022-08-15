@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
   Image_Post.init(
     {
       type: DataTypes.STRING,
+      time: DataTypes.INTEGER,
       caption: DataTypes.STRING,
       img_url: DataTypes.STRING(15000),
       userId: {
