@@ -1,4 +1,4 @@
-const { User, User_Like } = require('../models')
+const { User, User_Like, User_view } = require('../models')
 
 const GetAllUsers = async (req, res) => {
   try {
@@ -97,10 +97,45 @@ const getUserLikes = async (req, res) => {
 const LikeUser = async (req, res) => {
   try {
     let u = await User_Like.create({
-      userId: req.params.liked_userId,
-      liked_userId: req.params.user_id
+      userId: parseInt(req.params.liked_userId),
+      liked_userId: parseInt(req.params.user_id)
     })
     res.send(u)
+  } catch (error) {
+    throw error
+  }
+}
+const ViewUser = async (req, res) => {
+  try {
+    let u = await User_view.create({
+      userId: req.params.user_id,
+      viewed_userId: req.params.viewed_userId
+    })
+    res.send(u)
+  } catch (error) {
+    throw error
+  }
+}
+const getViewedUsers = async (req, res) => {
+  try {
+    const viewed = await User.findAll({
+      where: { id: req.params.user_id },
+      include: [{ model: User, as: 'viewed', through: { attributes: [] } }]
+    })
+    res.send(viewed)
+  } catch (error) {
+    console.log(error)
+  }
+}
+const DeleteView = async (req, res) => {
+  try {
+    let u = await User_view.destroy({
+      where: {
+        userId: req.params.viewed_userId,
+        viewed_userId: req.params.user_id
+      }
+    })
+    res.send({ message: `Deleted view` })
   } catch (error) {
     throw error
   }
@@ -130,5 +165,8 @@ module.exports = {
   UpdateUser,
   DeleteUser,
   LikeUser,
-  DeleteLike
+  DeleteLike,
+  ViewUser,
+  getViewedUsers,
+  DeleteView
 }

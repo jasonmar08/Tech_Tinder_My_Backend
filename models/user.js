@@ -18,6 +18,16 @@ module.exports = (sequelize, DataTypes) => {
         through: models.User_Like,
         foreignKey: 'liked_userId'
       })
+      User.belongsToMany(models.User, {
+        as: 'viewed',
+        through: models.User_view,
+        foreignKey: 'viewed_userId'
+      })
+      User.belongsToMany(models.User, {
+        as: 'viewedMe',
+        through: models.User_view,
+        foreignKey: 'userId'
+      })
       User.hasMany(models.Video_Post, {
         foreignKey: 'userId',
         onDelete: 'cascade',
@@ -67,7 +77,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: true
       },
-      pfp_link: DataTypes.STRING(1500),
+      pfp_link: DataTypes.STRING(15000),
       bio: DataTypes.STRING
     },
     {
