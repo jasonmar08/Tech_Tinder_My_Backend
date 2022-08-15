@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       img_url: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(15000)
       },
       userId: {
         type: Sequelize.INTEGER,
