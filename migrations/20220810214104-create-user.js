@@ -51,7 +51,7 @@ module.exports = {
         allowNull: true
       },
       pfp_link: {
-        type: Sequelize.STRING(1500)
+        type: Sequelize.STRING(15000)
       },
       bio: {
         type: Sequelize.STRING

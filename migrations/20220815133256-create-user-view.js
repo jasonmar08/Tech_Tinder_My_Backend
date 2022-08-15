@@ -1,26 +1,22 @@
 'use strict'
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('video_posts', {
+    await queryInterface.createTable('user_views', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      type: {
-        type: Sequelize.STRING
-      },
-      caption: {
-        type: Sequelize.STRING
-      },
-      video_url: {
-        type: Sequelize.STRING(15000)
-      },
       userId: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        onDelete: 'CASCADE',
+        references: {
+          model: 'users',
+          key: 'id'
+        }
+      },
+      viewed_userId: {
+        type: Sequelize.INTEGER,
         references: {
           model: 'users',
           key: 'id'
@@ -37,6 +33,6 @@ module.exports = {
     })
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('video_posts')
+    await queryInterface.dropTable('user_views')
   }
 }

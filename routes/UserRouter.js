@@ -38,6 +38,24 @@ Router.get(
   middleware.verifyToken,
   controller.getUserLikes
 )
+Router.get(
+  '/view/:user_id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.getViewedUsers
+)
+Router.post(
+  '/view/:user_id/:viewed_userId',
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.ViewUser
+)
+Router.delete(
+  '/view/:user_id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.DeleteUser
+)
 /// don't think we need this since Auth does this but leave commented out for now
 // Router.post('/create', controller.CreateUser)
 Router.put(
