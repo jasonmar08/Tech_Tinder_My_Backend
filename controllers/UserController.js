@@ -108,19 +108,31 @@ const LikeUser = async (req, res) => {
 const ViewUser = async (req, res) => {
   try {
     let u = await User_view.create({
-      userId: req.params.user_id,
-      viewed_userId: req.params.viewed_userId
+      userId: req.params.viewed_userId,
+      viewed_userId: req.params.user_id
     })
     res.send(u)
   } catch (error) {
     throw error
   }
 }
+
 const getViewedUsers = async (req, res) => {
   try {
     const viewed = await User.findAll({
       where: { id: req.params.user_id },
       include: [{ model: User, as: 'viewed', through: { attributes: [] } }]
+    })
+    res.send(viewed)
+  } catch (error) {
+    console.log(error)
+  }
+}
+const getUserViewMe = async (req, res) => {
+  try {
+    const viewed = await User.findAll({
+      where: { id: req.params.user_id },
+      include: [{ model: User, as: 'viewedMe', through: { attributes: [] } }]
     })
     res.send(viewed)
   } catch (error) {
@@ -153,6 +165,19 @@ const DeleteLike = async (req, res) => {
     throw error
   }
 }
+const DeleteLikedMe = async (req, res) => {
+  try {
+    let u = await User_Like.destroy({
+      where: {
+        userId: req.params.liked_userId,
+        liked_userId: req.params.user_id
+      }
+    })
+    res.send({ message: `Deleted like` })
+  } catch (error) {
+    throw error
+  }
+}
 
 module.exports = {
   GetAllUsers,
@@ -168,5 +193,7 @@ module.exports = {
   DeleteLike,
   ViewUser,
   getViewedUsers,
-  DeleteView
+  DeleteView,
+  DeleteLikedMe,
+  getUserViewMe
 }
