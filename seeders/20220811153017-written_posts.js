@@ -18,6 +18,14 @@ const written_posts = [
     userId: 1,
     createdAt: new Date(),
     updatedAt: new Date()
+  },
+  {
+    type: 'written',
+    title: 'Want a flamethrower?',
+    text: "I made too many flame throwers so I'm giving them away as party favors now...",
+    userId: 1,
+    createdAt: new Date(),
+    updatedAt: new Date()
   }
 ]
 
