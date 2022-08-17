@@ -67,7 +67,7 @@ const users = [
     gender: 'Male',
     orientation: 'Female',
     pfp_link:
-      'https://e3.365dm.com/22/05/768x432/skynews-elon-musk_5780923.jpg?20220725073759',
+      'https://www.gatesfoundation.org/-/media/gfo/3about/3people/ga311881_bill_gates.jpg',
     bio: 'Melinda please come back :(',
     createdAt: new Date(),
     updatedAt: new Date()
@@ -115,7 +115,7 @@ const users = [
     gender: 'Female',
     orientation: 'Male',
     pfp_link:
-      'https://e3.365dm.com/22/05/768x432/skynews-elon-musk_5780923.jpg?20220725073759',
+      'https://upload.wikimedia.org/wikipedia/commons/d/da/Elizabeth_Holmes_2014_cropped.jpg',
     bio: "Don't believe everything you hear on TV",
     createdAt: new Date(),
     updatedAt: new Date()
