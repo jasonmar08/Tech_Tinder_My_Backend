@@ -50,6 +50,30 @@ const video_posts = [
     userId: 5,
     createdAt: new Date(),
     updatedAt: new Date()
+  },
+  {
+    type: 'video',
+    caption: 'So excited to spend more time on my charity work.',
+    video_url: 'https://www.youtube.com/watch?v=tAM3F07Uggg',
+    userId: 7,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    type: 'video',
+    caption: 'A recent talk I gave',
+    video_url: 'https://www.youtube.com/watch?v=06M_xmHmDfw',
+    userId: 8,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  },
+  {
+    type: 'video',
+    caption: 'Priority two is Aliens, Priority one is tacos <3',
+    video_url: 'https://www.youtube.com/watch?v=clhXVdjvOyk',
+    userId: 10,
+    createdAt: new Date(),
+    updatedAt: new Date()
   }
 ]
 

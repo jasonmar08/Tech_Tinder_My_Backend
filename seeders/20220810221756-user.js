@@ -164,7 +164,7 @@ const users = [
     orientation: 'Male',
     pfp_link:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa3G6_NTsqhcbXYDrGS1tJEexlTy-AgP0mlQ&usqp=CAU',
-    bio: 'Felt cute, might merge with your company later.',
+    bio: "I'm the best there is, I wake up and I push the boundary.",
     createdAt: new Date(),
     updatedAt: new Date()
   },
