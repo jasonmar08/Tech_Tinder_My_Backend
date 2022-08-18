@@ -4,7 +4,7 @@
 
 ## Date: 08/10/2022
 
-#### By: Avery Novick, Jason Martinez, Matt Scott
+#### By: Avery Novick, Jason Martinez, Matthew Scott
 
 <a href="" target="_blank" rel="noreferrer">Deployed Website</a>
 
