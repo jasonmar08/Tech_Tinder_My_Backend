@@ -22,7 +22,7 @@ const video_posts = [
   {
     type: 'video',
     caption: 'Starlink will change everything!',
-    video_url: 'https://www.youtube.com/watch?v=ck5z0uMGz8s',
+    video_url: 'https://www.youtube.com/embed/ck5z0uMGz8s',
     userId: 2,
     createdAt: new Date(),
     updatedAt: new Date()

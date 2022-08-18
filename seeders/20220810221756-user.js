@@ -179,7 +179,7 @@ const users = [
     gender: 'Female',
     orientation: 'Male',
     pfp_link:
-      'https://e3.365dm.com/22/05/768x432/skynews-elon-musk_5780923.jpg?20220725073759',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzLMDgodtIMzzxK-It0g82mKkNTqglQQiIw&usqp=CAU',
     bio: "I'll love you to Mars and back.",
     createdAt: new Date(),
     updatedAt: new Date()
