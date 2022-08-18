@@ -2,9 +2,6 @@ const { User } = require('../models')
 const middleware = require('../middleware')
 require('dotenv').config()
 const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey(
-  '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'
-)
 
 const msg = {
   to: 'averynov@yahoo.com', // Change to your recipient
