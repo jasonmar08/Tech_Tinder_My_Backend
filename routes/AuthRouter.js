@@ -17,5 +17,6 @@ router.get(
   middleware.verifyToken,
   controller.CheckSession
 )
+router.post('/email', controller.email)
 
 module.exports = router
