@@ -1,3 +1,5 @@
+<img style="center" src="images/banner.png"  width="1000">
+
 # Tech-Tinder-Backend
 
 ## A dating app for losers in tech
@@ -6,11 +8,8 @@
 
 #### By: Avery Novick, Jason Martinez, Matthew Scott
 
-<a href="" target="_blank" rel="noreferrer">Deployed Website</a>
-
----
-
-<img src="./images/Zuck.png"  height="350">
+<a href="https://techtinder.herokuapp.com/" target="_blank" rel="noreferrer">Deployed Front End</a>
+<a href="https://tech-tinder-backend.herokuapp.com/" target="_blank" rel="noreferrer">Deployed Back End</a>
 
 ---
 
@@ -36,9 +35,19 @@ Once you fork and clone the repo:
 
 ### Screenshots
 
+#### Browser Version
+
 <div style= "center">
     <pre>
-        <img src="images/loginpage.png"  height="350">&nbsp;&nbsp;&nbsp;<img src="images/newsfeed.png" height="350">&nbsp;&nbsp;&nbsp;<img src="images/profile.png" height="350">&nbsp;&nbsp;&nbsp;<img src="images/instructions.png" height="350">&nbsp;&nbsp;&nbsp;<img src="images/create.png" height="350">
+        <img src="images/registration.png"  height="350">&nbsp;&nbsp;&nbsp;<img src="images/feed.png" height="350">&nbsp;&nbsp;&nbsp;<img src="images/edit.png" height="350">&nbsp;&nbsp;&nbsp;<img src="images/connections.png" height="350">&nbsp;&nbsp;&nbsp;
+    </pre>
+</div>
+
+#### Mobile Version
+
+<div style= "center">
+    <pre>
+        <img src="images/registration.png"  height="350">&nbsp;&nbsp;&nbsp;<img src="images/feed.png" height="350">&nbsp;&nbsp;&nbsp;<img src="images/edit.png" height="350">&nbsp;&nbsp;&nbsp;<img src="images/connections.png" height="350">&nbsp;&nbsp;&nbsp;
     </pre>
 </div>
 
