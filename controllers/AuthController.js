@@ -30,7 +30,8 @@ const Login = async (req, res) => {
       let token = middleware.createToken(payload)
       return res.send({ user: payload, token })
     }
-    res.status(401).send({ status: 'Error', msg: 'Unauthorized' })
+    // res.status(401).send({ status: 'Error', msg: 'Unauthorized' })
+    return res.send('Unauthorized')
   } catch (error) {
     throw error
   }
