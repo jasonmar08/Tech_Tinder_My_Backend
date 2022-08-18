@@ -71,6 +71,8 @@ Once you fork and clone the repo:
 #### _Future Updates_
 
 - [ ] Allow users to dm each other
+- [ ] Allow users to change password
+- [ ] Allow users to delete a like
 
 ---
 
