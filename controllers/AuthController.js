@@ -1,15 +1,6 @@
 const { User } = require('../models')
 const middleware = require('../middleware')
-require('dotenv').config()
-const sgMail = require('@sendgrid/mail')
 
-const msg = {
-  to: 'averynov@yahoo.com', // Change to your recipient
-  from: 'averynovick17@gmail.com', // Change to your verified sender
-  subject: 'Sending with SendGrid is Fun',
-  text: 'and easy to do anywhere, even with Node.js',
-  html: '<strong>and easy to do anywhere, even with Node.js</strong>'
-}
 const Login = async (req, res) => {
   try {
     const user = await User.findOne({
