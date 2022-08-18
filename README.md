@@ -1,29 +1,32 @@
 <img style="center" src="images/banner.png"  width="1000">
 
-# Tech-Tinder-Backend
+## Back End
 
 ## A dating app for losers in tech
 
-## Date: 08/10/2022
-
-#### By: Avery Novick, Jason Martinez, Matthew Scott
-
-<a href="https://techtinder.herokuapp.com/" target="_blank" rel="noreferrer">Deployed Front End</a>
-<a href="https://tech-tinder-backend.herokuapp.com/" target="_blank" rel="noreferrer">Deployed Back End</a>
+### Date: 08/19/2022
 
 ---
 
-### _Description_
+#### Avery Novick: <a href="https://www.linkedin.com/in/avery-novick/" target="_blank" rel="noreferrer">LinkedIn</a>, <a href="https://github.com/anovick1" target="_blank" rel="noreferrer">GitHub</a>
 
-For a full stack PERN application. This is a mock dating app for individuals who are in tech.
+#### Jason Martinez: <a href="https://www.linkedin.com/in/matthew-scott95/" target="_blank" rel="noreferrer">LinkedIn</a>, <a href="github.com/jasonmar08" target="_blank" rel="noreferrer">GitHub</a>
 
----
-
-### Project Overview
+#### Matt Scott: <a href="linkedin.com/in/martinez-jason" target="_blank" rel="noreferrer">LinkedIn</a>, <a href="https://github.com/gr8tscott" target="_blank" rel="noreferrer">GitHub</a>
 
 ---
 
-### Getting Started
+### <a href="https://techtinder.herokuapp.com/" target="_blank" rel="noreferrer">Deployed Website</a>
+
+---
+
+## Description
+
+For a full stack application using PostgreSQL, Express.js, React, Node.js (PERN) . This is a mock dating app for individuals who are in tech.
+
+---
+
+## Getting Started
 
 Once you fork and clone the repo:
 
@@ -33,7 +36,7 @@ Once you fork and clone the repo:
     4.   npx sequelize db:migrate
     5.   npx sequelize db:seed:all
 
-### Screenshots
+## Screenshots
 
 #### Mobile Version
 
@@ -53,7 +56,7 @@ Once you fork and clone the repo:
 
 ---
 
-### _Technologies Used_
+### Technologies Used
 
 <img style="center" src="https://repository-images.githubusercontent.com/248812720/56902700-c5bd-11ea-813f-ed8631377258"  width="500">
 
@@ -68,7 +71,7 @@ Once you fork and clone the repo:
 
 ---
 
-#### _Future Updates_
+### Future Updates
 
 - [ ] Allow users to dm each other
 - [ ] Allow users to change password
@@ -76,7 +79,7 @@ Once you fork and clone the repo:
 
 ---
 
-#### **_Resources_**
+### **_Resources_**
 
 ##### [Frontend GitHub Link](https://github.com/anovick1/Tech-Tinder-Front)
 
