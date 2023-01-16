@@ -4,7 +4,8 @@
   "description": "## A dating app for losers in tech",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --ignore client/ app.js",
+    "dev": "NODE_ENV=development nodemon --ignore client/ app.js",
+    "prod": "NODE_ENV=production node app.js",
     "start": "node app.js",
     "build": "npm install && npx sequelize-cli db:migrate"
   },
