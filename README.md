@@ -2,7 +2,7 @@
 
 ## Back End
 
-## A dating app for innovators in the tech industry
+## A dating app for innovators in tech
 
 ### Date: 08/19/2022
 
